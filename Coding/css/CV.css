@@ -1,0 +1,364 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+hr {
+  background-color: inherit;
+  border: inherit;
+  opacity: 1;
+}
+
+@font-face {
+  font-family: Growland-Bold;
+  src: url("../../Font/growland/Growland Bold.otf");
+}
+@font-face {
+  font-family: Barcelona-Italic;
+  src: url("../../Font/barcelona_5/Barcelonait.otf");
+}
+@font-face {
+  font-family: Barcelona;
+  src: url("../../Font/barcelona_5/barcelona.otf");
+}
+@font-face {
+  font-family: The Font;
+  src: url("../../Font/the_bold_font/THEBOLDFONT 2022.otf");
+}
+@font-face {
+  font-family: Myriad Variable Concept;
+  src: url("../../Font/MyriadVariableConcept-Roman.otf");
+}
+nav {
+  background-color: #4b9cf9;
+  height: 60px;
+  display: flex;
+  color: #e8f3fe;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Growland-Bold;
+  padding: 0 10px 0 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+nav .title {
+  font-size: 27pt;
+}
+nav .menu {
+  font-size: 13pt;
+}
+nav .menu ul {
+  display: flex;
+}
+nav .menu ul li {
+  padding: 0px 20px;
+}
+nav .menu ul li a {
+  text-decoration: none;
+  color: #e8f3fe;
+}
+nav .menu ul .line {
+  border-right: 3px solid #e8f3fe;
+}
+
+.about-me {
+  background-color: #e8f3fe;
+  height: 100vh;
+  display: flex;
+  padding-top: 60px;
+}
+.about-me .name-status {
+  padding: 200px 0 0 50px;
+}
+.about-me .name-status h1:nth-child(1) {
+  font-family: Growland-Bold;
+  color: #196bde;
+  font-size: 120pt;
+  line-height: 0.5;
+}
+.about-me .name-status h1:nth-child(2) {
+  color: #a4cefc;
+  font-size: 40pt;
+  line-height: 0.6;
+  text-indent: 10px;
+}
+.about-me .name-status h1:nth-child(3) {
+  font-family: Barcelona-Italic;
+  color: #77b6fb;
+  font-size: 36pt;
+  line-height: 2.5;
+  text-indent: 5px;
+}
+.about-me .info {
+  background-color: #2382f7;
+  margin: 90px 0 90px 60px;
+  width: 760px;
+  color: #e8f3fe;
+  padding: 60px 100px 40px 80px;
+}
+.about-me .info h1, .about-me .info .e-mail {
+  font-family: Barcelona;
+}
+.about-me .info span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-me .info img {
+  width: 7%;
+}
+.about-me .info h1 {
+  font-size: 36pt;
+}
+.about-me .info div {
+  padding-top: 20px;
+}
+.about-me .info div .phone-number, .about-me .info div .e-mail {
+  font-size: 24pt;
+  padding-left: 30px;
+}
+
+.hobby {
+  background-color: #2382f7;
+  height: 100vh;
+  padding-top: 60px;
+}
+.hobby .hobby-title {
+  font-family: Growland-Bold;
+  color: #e8f3fe;
+  font-size: 50pt;
+  text-align: center;
+  padding-top: 244px;
+}
+.hobby .hobby-content p {
+  font-family: Barcelona;
+  color: #cce4fd;
+  font-size: 30pt;
+  text-align: center;
+}
+.hobby .hobby-content p:nth-child(1) {
+  margin: -260px 0 0 350px;
+}
+.hobby .hobby-content p:nth-child(2) {
+  margin: 317px 0 0 550px;
+}
+.hobby .hobby-content p:nth-child(3) {
+  margin: -260px 0 0 -675px;
+}
+.hobby .hobby-content hr {
+  border-style: none;
+  border-top: 5px dashed #e8f3fe;
+}
+.hobby .hobby-content .line-1 {
+  width: 285px;
+  rotate: 75deg;
+  margin: -63px 0 0 717px;
+}
+.hobby .hobby-content .line-2 {
+  width: 470px;
+  rotate: 18deg;
+  margin: 120px 0 0 360px;
+}
+.hobby .hobby-content .line-3 {
+  width: 430px;
+  rotate: -20deg;
+  margin: -245px 0 0 300px;
+}
+
+.education {
+  background-color: #e8f3fe;
+  height: 100vh;
+  padding-top: 60px;
+}
+.education h1 {
+  font-family: Growland-Bold;
+  color: #196bde;
+  font-size: 50pt;
+  text-align: right;
+  padding: 12px 50px 0 0;
+}
+.education .sd, .education .smk {
+  margin: 15px 0 0 50px;
+}
+.education .smp {
+  margin: 15px 0 0 740px;
+}
+.education .sd-year, .education .smp-year, .education .smk-year {
+  display: flex;
+  font-family: The Font;
+  color: #4b9cf9;
+  font-size: 30pt;
+  padding-bottom: 8px;
+}
+.education .sd-year p:nth-child(2), .education .smp-year p:nth-child(2), .education .smk-year p:nth-child(2) {
+  text-align: right;
+}
+.education .sd-year p:nth-child(2) {
+  padding-left: 180px;
+}
+.education .smp-year p:nth-child(2) {
+  padding-left: 80px;
+}
+.education .smk-year p:nth-child(2) {
+  padding-left: 90px;
+}
+.education .school {
+  font-family: Barcelona-Italic;
+  color: #77b6fb;
+  font-size: 24pt;
+}
+.education .school span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+.education hr {
+  border-style: none;
+  border-top: 5px dashed #a4cefc;
+}
+.education .line-4, .education .line-6 {
+  border-left: 5px dashed #a4cefc;
+}
+.education .line-5, .education .line-7 {
+  border-right: 5px dashed #a4cefc;
+}
+.education .line-4 {
+  width: 725px;
+  height: 50px;
+  margin: -36px 0 0 120px;
+}
+.education .line-5 {
+  width: 620px;
+  height: 100px;
+  margin: -95px 0 0 535px;
+}
+.education .line-6 {
+  width: 600px;
+  height: 65px;
+  margin: -58px 0 0 120px;
+}
+.education .line-7 {
+  width: 620px;
+  height: 67px;
+  margin: -60px 0 0 535px;
+}
+
+.language {
+  background-color: #2382f7;
+  height: 100vh;
+  padding-top: 60px;
+}
+.language h1 {
+  font-family: Growland-Bold;
+  color: #e8f3fe;
+  font-size: 100pt;
+  text-align: center;
+  padding-top: 50px;
+}
+.language .language-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.language .language-content div {
+  background-color: #e8f3fe;
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.language .language-content div p {
+  font-family: The Font;
+  color: #4b9cf9;
+  font-size: 60pt;
+  text-align: center;
+  padding: 80px 0;
+}
+.language .language-content .ch p {
+  font-family: DengXian;
+  font-weight: bold;
+}
+
+.skill {
+  background-color: #e8f3fe;
+  height: 100vh;
+  display: flex;
+  padding-top: 60px;
+}
+.skill h1 {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: Growland-Bold;
+  color: #196bde;
+  font-size: 75pt;
+  padding: 30px 0 0 30px;
+}
+.skill .skill-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.skill .skill-content div {
+  background-color: #2382f7;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  margin: 52px 42px 0 42px;
+}
+.skill .skill-content div p {
+  font-family: Myriad Variable Concept;
+  font-weight: bolder;
+  color: #cce4fd;
+  font-size: 75pt;
+  text-align: center;
+  padding: 60px 0;
+}
+.skill .skill-content .html, .skill .skill-content .css, .skill .skill-content .js {
+  margin-top: 0;
+}
+.skill .skill-content .html p, .skill .skill-content .css p, .skill .skill-content .js p {
+  font-size: 50pt;
+  padding: 72px 0;
+}
+
+/*# sourceMappingURL=CV.css.map */

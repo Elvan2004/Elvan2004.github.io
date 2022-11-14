@@ -1,0 +1,64 @@
+@use "var"
+@use "font"
+
+.education
+    background-color: var.$color7
+    height: 100vh
+    padding-top: 60px
+    h1
+        font-family: Growland-Bold
+        color: var.$color1
+        font-size: 50pt
+        text-align: right
+        padding: 12px 50px 0 0
+    .sd, .smk
+        margin: 15px 0 0 50px
+    .smp
+        margin: 15px 0 0 740px
+    .sd-year, .smp-year, .smk-year
+        display: flex
+        font-family: The Font
+        color: var.$color3
+        font-size: 30pt
+        padding-bottom: 8px
+        p:nth-child(2)
+            text-align: right
+    .sd-year
+        p:nth-child(2)
+            padding-left: 180px
+    .smp-year
+        p:nth-child(2)
+            padding-left: 80px
+    .smk-year
+        p:nth-child(2)
+            padding-left: 90px
+    .school
+        font-family: Barcelona-Italic
+        color: var.$color4
+        font-size: 24pt
+        span
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            font-style: italic
+    hr
+        border-style: none
+        border-top: 5px dashed var.$color5
+    .line-4, .line-6
+        border-left: 5px dashed var.$color5
+    .line-5, .line-7
+        border-right: 5px dashed var.$color5
+    .line-4
+        width: 725px
+        height: 50px
+        margin: -36px 0 0 120px
+    .line-5
+        width: 620px
+        height: 100px
+        margin: -95px 0 0 535px
+    .line-6
+        width: 600px
+        height: 65px
+        margin: -58px 0 0 120px
+    .line-7
+        width: 620px
+        height: 67px
+        margin: -60px 0 0 535px

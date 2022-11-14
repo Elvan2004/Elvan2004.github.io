@@ -1,0 +1,29 @@
+@use "var"
+@use "font"
+
+nav
+    background-color: var.$color3
+    height: 60px
+    display: flex
+    color: var.$color7
+    justify-content: space-between
+    align-items: center
+    font-family: Growland-Bold
+    padding: 0 10px 0 20px
+    position: fixed
+    left: 0
+    right: 0
+    z-index: 1
+    .title
+        font-size: 27pt
+    .menu
+        font-size: 13pt
+        ul
+            display: flex
+            li
+                padding: 0px 20px
+                a
+                    text-decoration: none
+                    color: var.$color7
+            .line
+                border-right: 3px solid var.$color7
